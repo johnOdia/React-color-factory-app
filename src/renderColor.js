@@ -19,7 +19,7 @@ export function RenderColor({ match }) {
         <div style={style}>
             This is {color.name} <br /> <br /> isn't it beautiful?
             <br /><br />
-            <Link to='/colors'>
+            <Link to='/colors'  style={{ textDecoration: 'underline white' }}>
                 <div style={{ color: '#fff' }}>Go back</div>
             </Link>
         </div>

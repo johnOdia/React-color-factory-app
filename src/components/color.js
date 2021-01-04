@@ -7,8 +7,8 @@ export class Color extends React.Component{
             <Link  to={{
                 pathname: 'colors/' + this.props.name,
                 state: { name:this.props.name,value: this.props.value }
-              }}>
-              <li>{this.props.name}</li>
+              }} >
+              <li  style={{ listStyleType: 'none', marginRight: '30px', marginBottom: '5px' }}>{this.props.name}</li>
             </Link>
         )
     }

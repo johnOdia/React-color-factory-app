@@ -6,6 +6,8 @@ const colors = { colors: [{ name: 'red', value: '#FF0000' }, { name: 'green', va
 
 const storedColors = localStorage.getItem('colors')  ? 'do nothing' : localStorage.setItem('colors',JSON.stringify(colors))
 
+const style={background:'rgb(24, 23, 23',color:'white',height:'120px',marginTop: '-20px'}
+
 export class Colors extends React.Component{
     constructor(props) {
         super(props)
@@ -19,11 +21,12 @@ export class Colors extends React.Component{
           })
 
         return(
-            <div>
+            <div style={style}>
                 <h2>Welcome to our color factory.</h2>
-                <Link to='/colors/new'>
-                   <h1>Add a color</h1>
+                <Link to='/colors/new' style={{ textDecoration: 'underline white' }}>
+                   <h1 style={{color:'white'}}>Add a color</h1>
                 </Link>
+                <p style={{color:'blue',marginTop:'40px'}}>Please select a color</p>
                 <ul>{allColors}</ul>
             </div>
         )
