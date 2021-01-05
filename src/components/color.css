@@ -34,6 +34,7 @@ input{
 
 #value{
     margin-left: 4px;
+    width: 28%;
 }
 
 .btn{
@@ -49,4 +50,25 @@ input{
 
 .btn:hover{
     background-color: rgb(4, 94, 94);
+}
+
+.displayColor{
+    width: 10%;
+    height: 13%;
+    border: .5px solid rgb(122, 119, 119);
+    display: inline-block;
+    position: absolute;
+    margin-left: 17px;
+}
+
+.colorWheel{
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+}
+
+.colorWheel p{
+    font-size: .6em;
+    color: red;
 }
